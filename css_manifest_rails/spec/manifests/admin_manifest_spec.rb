@@ -6,14 +6,14 @@ RSpec.describe do
   end
 
   it "should require the bootstrap-addon file in the admin manifest" do
-    expect(File.read("app/assets/stylesheets/admin.css")).to include("//= require bootstrap-addon")
+    expect(File.read("app/assets/stylesheets/admin.css")).to include("*= require bootstrap-addon")
   end
 
   it "should require the jquery-addon file in the admin manifest" do
-    expect(File.read("app/assets/stylesheets/admin.css")).to include("//= require jquery-addon")
+    expect(File.read("app/assets/stylesheets/admin.css")).to include("*= require jquery-addon")
   end
 
   it "should require the blogs file in the admin manifest" do
-    expect(File.read("app/assets/stylesheets/admin.css")).to include("//= require blogs")
+    expect(File.read("app/assets/stylesheets/admin.css")).to include("*= require blogs")
   end
 end
